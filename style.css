@@ -30,7 +30,8 @@ header {
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease;
   border-radius: 20px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 nav {
@@ -63,6 +64,7 @@ nav a {
   transition: all 0.3s ease;
   border-radius: 4px;
    -webkit-text-stroke: 0.1px black;
+   border-bottom: 0.5px solid #7A9E4D;
 }
 
 section, footer {
@@ -147,4 +149,100 @@ iframe {
 /* Footer */
 footer {
   margin-top: 48px;
+}
+
+@media (max-width: 989px) {
+  body {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  header {
+    border-radius: 15px;
+    padding: 15px 0;
+
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 5px 10px;
+    align-items: stretch;
+  }
+
+  nav h1 {
+    font-size: 3.2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size:1.4rem;
+  }
+
+  section, footer {
+    padding: 30px 15px;
+    margin: 1rem auto;
+    border-radius: 25px;
+  }
+
+  .hero-img {
+    border-radius: 25px;
+  }
+
+  .about-us-layout {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-us-layout h2, .p-wrapper {
+    flex: 1;
+    width: 100%;
+  }
+
+  article img {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  @media (max-width: 548px) {
+    body {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    header {
+      border-radius: 10px;
+    }
+
+    nav h1 {
+      font-size: 3rem;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    nav a {
+      font-size: 1rem;
+    }
+
+    section, footer {
+      padding: 20px 10px;
+      border-radius: 20px;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-img {
+      border-radius: 20px;
+    }
+  }
 }
