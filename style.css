@@ -75,7 +75,7 @@ section, footer {
   border-radius: 40px;
 }
 
-section h2 {
+section h2, footer h2 {
   font-size: 5rem;
   margin-bottom: 60px;
   text-align: center;
@@ -125,6 +125,11 @@ section h3 {
   color: red;
   font-weight: bold;
 }
+
+.about-us a {
+  color:#F075AE;
+  text-decoration: none;
+}
 /* Typography */
 
 /* Links & Accents */
@@ -149,6 +154,12 @@ iframe {
 /* Footer */
 footer {
   margin-top: 48px;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+  padding: 0 25px;
 }
 
 @media (max-width: 989px) {
