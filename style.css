@@ -1,11 +1,69 @@
 /* Base Styles */
-body {
-  color: royalblue;
-  text-align: center;
-  background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+:root {
+  /*Color Palettes*/
+  --bg-body: #9BC264;
+  --bg-section: #F7DB91;
+  --bg-text: #FFFDCE;
+  --bg-headers: #F075AE;
 }
 
+body {
+  background-color: var(--bg-body);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align:center;
+}
+
+
+header {
+  background-color: var(--bg-section);
+  color: var(--bg-headers);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid var(--bg-body);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  width: 1200px;
+}
+
+nav {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  display: flex;
+}
+
+nav h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 6rem;
+  letter-spacing: 0.8px;
+  margin: 0;
+  -webkit-text-stroke: 0.8px black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  color:#F075AE;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+   -webkit-text-stroke: 0.1px black;
+}
 /* Typography */
 
 /* Links & Accents */
