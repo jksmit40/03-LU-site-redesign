@@ -4,7 +4,7 @@
   /*Color Palettes*/
   --bg-body: #9BC264;
   --bg-section: #F7DB91;
-  --bg-text: #FFFDCE;
+  --bg-text: #7A9E4D;
   --bg-headers: #F075AE;
 }
 
@@ -26,7 +26,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid var(--bg-body);
+  border-bottom: 3px solid var(--bg-body);
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease;
   border-radius: 20px;
@@ -65,8 +65,34 @@ nav a {
    -webkit-text-stroke: 0.1px black;
 }
 
-.hero-image {
-  width: 1200px;
+section {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 50px 20px;
+  background-color: var(--bg-section);
+  border-radius: 40px;
+}
+
+section h2 {
+  font-size: 48px;
+  font-weight: 700px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--bg-headers);
+  letter-spacing: -1px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit:cover;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+section h3 {
+  color: #7A9E4D;
 }
 /* Typography */
 
