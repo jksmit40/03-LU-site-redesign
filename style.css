@@ -4,7 +4,7 @@
   /*Color Palettes*/
   --bg-body: #9BC264;
   --bg-section: #F7DB91;
-  --bg-text: #7A9E4D;
+  --bg-text: #2C2C2C;
   --bg-headers: #F075AE;
 }
 
@@ -65,7 +65,7 @@ nav a {
    -webkit-text-stroke: 0.1px black;
 }
 
-section {
+section, footer {
   max-width: 1200px;
   margin: 1.5rem auto;
   padding: 50px 20px;
@@ -74,12 +74,13 @@ section {
 }
 
 section h2 {
-  font-size: 48px;
-  font-weight: 700px;
+  font-size: 5rem;
   margin-bottom: 60px;
   text-align: center;
   color: var(--bg-headers);
   letter-spacing: -1px;
+  -webkit-text-stroke: 0.8px black;
+  font-family: "Tangerine", cursive;
 }
 
 .hero-img {
@@ -93,6 +94,34 @@ section h2 {
 
 section h3 {
   color: #7A9E4D;
+}
+
+.about-us-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-us-layout h2 {
+  flex: .4;
+}
+
+.p-wrapper {
+  flex: .6;
+  color:var(--bg-text);
+}
+
+.Testimonials article {
+  flex: 1;
+}
+
+.price-was, .specials p {
+  font-weight: bold;
+}
+
+.specials span {
+  color: red;
+  font-weight: bold;
 }
 /* Typography */
 
